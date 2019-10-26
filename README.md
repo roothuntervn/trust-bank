@@ -9,9 +9,9 @@ service docker start
 ```
 3. Get source:
 ```bash
-mkdir ~/trust-bank
-cd ~/trust-bank
+cd ~
 git clone https://github.com/roothuntervn/trust-bank.git
+cd trust-bank
 ```
 3. Build image:
 ```bash
