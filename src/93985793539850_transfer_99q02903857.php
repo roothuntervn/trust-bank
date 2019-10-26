@@ -22,7 +22,7 @@
 
 			update_data($data);
 
-			if ($data[$_SESSION["username"]]["moneys"] > $data["drx"]["moneys"] && $data[$_SESSION["username"]]["moneys"] > $data["bill_gate"]["moneys"] && $data[$_SESSION["username"]]["moneys"] > $data["mark"]["moneys"]) {
+			if ($data[$_SESSION["username"]]["moneys"] > $data["drx"]["moneys"] && $data[$_SESSION["username"]]["moneys"] > $data["bill_gate"]["moneys"] && $data[$_SESSION["username"]]["moneys"] > $data["mark"]["moneys"])
 				$_SESSION['message'] = $flag;
 		} else {
 			$_SESSION['message'] = "Transfer fail!";

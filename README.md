@@ -19,6 +19,6 @@ docker build -t trust-bank .
 ```
 4. Run container:
 ```bash
-docker run --name trust-bank -p 8088:80 trust-bank
+docker run --name trustbank -p 8088:80 trust-bank
 ```
 3. Visit [http://localhost:8088](http://localhost:8088)

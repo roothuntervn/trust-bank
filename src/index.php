@@ -1,6 +1,3 @@
-<!-- Hey hacker, let's become the most richest people in the world, you will know the secret!-->
-<!-- debug mode will be your friend -->
-
 <?php
   session_start();
   require_once("config.php");
@@ -28,21 +25,23 @@
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 3);
     curl_setopt($ch, CURLOPT_COOKIE, session_name() . '=' . session_id());
-    $alert = trim(curl_exec($ch));
+    curl_exec($ch);
     curl_close($ch);
     header("Location: index.php");
     die();
   }
 ?>
 
-<!DOCTYPE html>
+<!-- Hey hacker, let's become the most richest people in the world, you will know the secret!-->
+<!-- debug mode will be your friend -->
+
 <html>
 <title>Banking</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-<a href="logout.php">Logout</a> | <a href="reset.php">Reset database</a>
+<span class="w3-large w3-text-green"> <a href="logout.php">Logout</a></span> | <span class="w3-large w3-text-blue"><a href="reset.php">Reset database</a></span>
 <?php if (isset($_SESSION['message'])) echo "<div class='w3-text-red' style='text-align:center;margin:5px;'><i>" . $_SESSION['message'] . "</i></div><hr>"; unset($_SESSION['message']); ?>
 <div>
 <div class="w3-card-4" style="margin:60px;display:inline-block;float:left;">

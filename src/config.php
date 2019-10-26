@@ -1,5 +1,6 @@
 <?php
 	
+	session_start();
 	require_once("secret.php");
 	$db = new SQLite3('data.db');
 
@@ -52,7 +53,5 @@
 			$stmt->execute();
 		}
 	}
-
-
-
+	
 ?>

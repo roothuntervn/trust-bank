@@ -33,7 +33,6 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['logi
 
 ?>
 
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Trust-Bank</title>
